@@ -3,5 +3,6 @@ function akanNameIdentifier{
     var birthday = document.getElementById("personBirthday")Date();
     var month = birthday.getMonth();
     var date = birthday.getDate();
-    var year = birthday.getFullYear();    
+    var year = birthday.getFullYear();   
+    year =  
 }
