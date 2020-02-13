@@ -1,7 +1,31 @@
+body{
+  background-image: url('https://as2.ftcdn.net/jpg/02/90/20/79/500_F_290207967_Rll9MmidFdpt9zk6MIuPp63yQAOx7UPO.jpg');
+}
 .top-bar{
   display: inline-block;
   border: 2px solid #587850;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-image: url('https://as2.ftcdn.net/jpg/01/33/42/21/500_F_133422168_UwdzHbcw9wdZqpEPnm5JOonU8fEZrw1B.jpg');
 }
 .top-bar-image{
   width: 50px;
+  float: right;
+  height: 40px;
+  margin-left: 10px;
+
+}
+.top-bar-logo{
+  width:100px;
+  height: 100px;
+}
+.countries{
+  display: block;
+  float: right;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  color: #587850;
 }
