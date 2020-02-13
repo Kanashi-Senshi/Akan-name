@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Akan name</title>
   </head>
   <body>
+    <script src="js/scripts.js"></script>
     <div class="top-bar">
       <img src="images/top-bar-logo.png" alt="logo" class="top-bar-logo">
       <div class="countries">
@@ -17,8 +17,18 @@
       </div>
     </div>
     <div class="header">
-
+      <p> THis is a website.</p>
     </div>
-
+    <div class="js">
+      <form onsubmit="return false">
+        <label for="personName">Name:</label><input type="text" id="personName" name="name"><br>
+        <label for="personBirthday">Birthday:</label><input type="date" id="personBirthday" name="name"><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="submit" value="Submit" onclick="akanNameIdentifier()">
+      </form>
+    </div>
   </body>
 </html>
