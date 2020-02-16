@@ -1,77 +1,80 @@
+html{
+  height: 100%;
+  overflow: hidden;
+}
 body{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d ;
+  height: 100%;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
-.top-bar{
-  width: 100%;
+header {
+  font-family: 'Permanent Marker', cursive;
+  box-sizing: border-box;
+  min-height: 50vh;
+  padding: 30vw 0 5vw;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+}
+header h1 {
+  margin-top: -100px;
+  font-family: 'Permanent Marker', cursive;
+}
+header, header:before{
+  background: 50% 50% / cover;
+}
+header::before{
+  bottom: 0;
+  content: "";
   left: 0;
+  position: absolute;
   right: 0;
   top: 0;
+  display: block;
+  background-image: url('https://netstorage-tuko.akamaized.net/images/0fgjhs627ucrjb6q6.jpg?imwidth=900');
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
 }
-.top-bar-image{
-  width: 49%;
-  height: 39%;
-  position: static;
-  float: left;
-  object-fit: cover;
-  padding: 1px;
+header{
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding: 1;
+  font-size: 50px;
 }
-.top-bar-image2{
-  width: 50.5%;
-  height: 19%;
-  position: static;
-  float: left;
-  object-fit: cover;
-  padding: 1px;
+.page{
+  font-family: 'Sriracha', cursive;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  margin-top: 100vh;
+  background-color: #e0c45c;
+  text-align: center;
 }
-.top-bar-image3{
-  width: 25%;
-  height: 20%;
-  position: static;
-  float: left;
-  object-fit: cover;
-  padding: 1px;
+.page p {
+  width: 50%;
+  margin: auto;
 }
-.top-bar-image4{
-  width: 24.5%;
-  height: 20%;
-  position: static;
-  float: left;
-  object-fit: cover;
-  padding: 1px;
+.js{
+  background-color: #cb3b3b;
 }
-.top-bar-heading{
-  color: whitesmoke;
-  position: absolute;
-  z-index: 20;
-  font-size: 47;
-  opacity: 0.5
-}
-.top-bar-paragraph {
-  font-size: 27;
-  opacity: 1.0;
-  color: whitesmoke;
-  position: absolute;
-  z-index: 40;
-}
-.column{
-  columns: 2;
-  display:inline-column;
-}
-.akan-day-name{
-  font-style: italic;
-  font-weight: lighter;
-  color: grey;
-}
-.top-bar-description{
+.website-info{
+  background-color: #85203b;
   width: 75%;
-  background-color: rgb(255, 94, 0);
-  opacity: 0.8;
-  padding: 20px;
-  height: 70px;
+  top: 200px;
+  left: 12.5%;
   position: relative;
-  top: -30;
-  display: inline-block;
-  margin: 0 auto;
-  left: 7%;
-  color: white;
+  text-align: center;
+  top: -500;
+  height: 70px;
+  z-index: 1;
+  font-family: 'Fredoka One', cursive;
 }
