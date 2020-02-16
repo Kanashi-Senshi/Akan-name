@@ -1,37 +1,80 @@
-
-.top-bar{
-  display: inline-block;
-  width: 100%;
+html{
+  height: 100%;
+  overflow: hidden;
+}
+body{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d ;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+header {
+  font-family: 'Permanent Marker', cursive;
+  box-sizing: border-box;
+  min-height: 50vh;
+  padding: 30vw 0 5vw;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+}
+header h1 {
+  margin-top: -100px;
+  font-family: 'Permanent Marker', cursive;
+}
+header, header:before{
+  background: 50% 50% / cover;
+}
+header::before{
+  bottom: 0;
+  content: "";
   left: 0;
+  position: absolute;
   right: 0;
   top: 0;
-  background-image: url('https://as2.ftcdn.net/jpg/01/33/42/21/500_F_133422168_UwdzHbcw9wdZqpEPnm5JOonU8fEZrw1B.jpg');
-  background-position: center;
-}
-.top-bar-image{
-  width: 50px;
-  float: right;
-  height: 40px;
-  margin-left: 10px;
-
-}
-.top-bar-logo{
-  width:100px;
-  height: 100px;
-}
-.countries{
   display: block;
-  float: right;
-  display: inline-flex;
-  align-items: center;
-  padding: 5px;
-  color: #587850;
-  font-size: 300;
+  background-image: url('https://netstorage-tuko.akamaized.net/images/0fgjhs627ucrjb6q6.jpg?imwidth=900');
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  min-height: 100vh;
 }
-.header p {
-  font-size: larger;
-  font-weight: bolder;
+header{
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-align: center;
+  margin: 0;
+  padding: 1;
+  font-size: 50px;
 }
-.personBirthday{
-  padding: 3px;
+.page{
+  font-family: 'Sriracha', cursive;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  margin-top: 100vh;
+  background-color: #e0c45c;
+  text-align: center;
+}
+.page p {
+  width: 50%;
+  margin: auto;
+}
+.js{
+  background-color: #cb3b3b;
+}
+.website-info{
+  background-color: #85203b;
+  width: 75%;
+  top: 200px;
+  left: 12.5%;
+  position: relative;
+  text-align: center;
+  top: -500;
+  height: 70px;
+  z-index: 1;
+  font-family: 'Fredoka One', cursive;
 }

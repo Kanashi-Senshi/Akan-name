@@ -2,33 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan name</title>
   </head>
-  <body>
+  <body> 
     <script src="js/scripts.js"></script>
-    <div class="top-bar">
-      <img src="images/top-bar-logo.png" alt="logo" class="top-bar-logo">
-      <div class="countries">
-        <p>GHANA</p>
-        <img src="images/ghana-flag.png" class="top-bar-image">
-        <p>IVORY COAST</p>
-        <img src="images/ivory-coast-flag.png" class="top-bar-image">
+    <header>
+      <h1>Akan Name</h1>
+      <p>Find out you Akan name.</p>
+    </header>
+    <p class="website-info">This is a website that generates the day of the week you were born using your birthday and then depending on gender returns your Akan name.</p>
+    <div class="page">
+      <p>Akan, ethnolinguistic grouping of peoples of the Guinea Coast who speak Akan languages (of the Kwa branch of the Niger-Congo family). They include the speakers of the Akyem, Anyi, Asante (Ashanti), Attié, Baule, Brong, Chakosi, Fante (Fanti), and Guang languages; some scholars also consider Twi a distinct Akan language. Most Akan peoples live in Ghana, where they settled in successive waves of migration between the 11th and 18th centuries; others inhabit the eastern part of Côte d’Ivoire and parts of Togo.Yams are the staple food crop in the Akan economy, but plantains and taro also are important; cocoa and palm oil are major commercial resources.</p>
+      <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name. This naming tradition is shared throughout West Africa and the African diaspora. During the 18th–19th centuries, slaves in the Caribbean from the region that is modern-day Ghana were referred to as Coromantees. Many of the leaders of slave rebellions had "day names" including Cuffy or Kofi, Cudjoe or Kojo, and Quamina or Kwame/Kwamina.Most Ghanaians have at least one name from this system, even if they also have an English or Christian name. Notable figures with day names include Ghana's first president Kwame Nkrumah and former United Nations Secretary-General Kofi Annan.</p>
+      <div class="js">
+        <form onsubmit="return false">
+          <label for="personName">Name:</label><input type="text" id="personName" name="name"/><br>
+          <label for="personBirthday">Birthday:</label><input type="date" id="personBirthday" name="name"/><br>
+          <label for="male">Male</label><input type="radio" id="male" name="gender" value="male"/><br>
+          <label for="female">Female</label><input type="radio" id="female" name="gender" value="female"/><br>
+          <input type="button" value="Submit" onclick="akanName()"/>
+        </form>
+        <p id="output">Your output is </p>
       </div>
-    </div>
-    <div class="header">
-      <p> THis is a website.</p>
-    </div>
-    <div class="js">
-      <form onsubmit="return false">
-        <label for="personName">Name:</label><input type="text" id="personName" name="name"><br>
-        <label for="personBirthday">Birthday:</label><input type="date" id="personBirthday" name="name"><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        <input type="submit" value="Submit" onclick="akanNameIdentifier()">
-      </form>
     </div>
   </body>
 </html>
