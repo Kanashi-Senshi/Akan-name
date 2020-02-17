@@ -14,14 +14,19 @@ function akanName(){
     var date = parseInt(date);
     var year = new Date (`${year}-${month}-${date}`);
     var d = year.getDay();
+    console.log(d);
     var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
     var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
     var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    if (document.getElementById('male').checked) {
-        document.getElementById("output").innerHTML =( name + " your Akan name is " + maleName[d] + " and you were born on a " + weekday[d] + ".");
-    }else if (document.getElementById('female').checked) {
-        document.getElementById("output").innerHTML =( name + " your Akan name is " + femaleName[d] + " and you were born on a " + weekday[d] + ".");
-    }else{
-        alert("Choose a gender.")
+    if (d ===d)
+        if (document.getElementById('male').checked) {
+            document.getElementById("output").innerHTML =( name + " your Akan name is " + maleName[d] + " and you were born on a " + weekday[d] + ".");
+        }else if (document.getElementById('female').checked) {
+            document.getElementById("output").innerHTML =( name + " your Akan name is " + femaleName[d] + " and you were born on a " + weekday[d] + ".");
+        }else{
+            alert("Choose a gender.")
+        }
+    else{
+        alert("Input your birthday!")
     }
 }
