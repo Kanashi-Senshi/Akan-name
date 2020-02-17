@@ -3,7 +3,6 @@ function akanName(){
     var birthday = document.getElementById("personBirthday").value;
     console.log(birthday)
     var birthday = Array.from(birthday);
-    console.log(birthday);
     var year =birthday.slice(0,4);
     var month =birthday.slice(5,7);
     var date =birthday.slice(8,10);
@@ -16,28 +15,11 @@ function akanName(){
     var year = new Date (`${year}-${month}-${date}`);
     var d = year.getDay();
     console.log("New date is " + d);
+    var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+    var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
+    console.log(name + " your Akan name is " + maleName[d])
     if (document.getElementById('male').checked) {
-        if (d === 0) {
-            document.getElementById("output").innerHTML = " your Akan name is Kwasi";
-        }
-        else if (d === 1) {
-            document.getElementById("output").innerHTML = name + " your Akan name is Kwadwo";
-        }
-        else if (d === 2) {
-            document.getElementById("output").innerHTML = name + " your Akan name is Kwabena";
-        }
-        else if (d === 3) {
-            document.getElementById("output").innerHTML = name + " your Akan name is Kwaku";
-        }
-        else if (d === 4) {
-            document.getElementById("output").innerHTML = name + " your Akan name is Yaw";
-        }
-        else if (d === 5) {
-            document.getElementById("output").innerHTML = name + " your Akan name is Kofi";
-        }
-        else {
-            document.getElementById("output").innerHTML = name + " your Akan name is Kwame";
-        }
+        
     }
     else if (document.getElementById('female').checked) {
         if (d === 0) {
