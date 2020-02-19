@@ -1,7 +1,6 @@
 function akanName(){
     var name = document.getElementById("personName").value;
     var birthday = document.getElementById("personBirthday").value;
-    console.log(birthday)
     var birthday = Array.from(birthday);
     var year =birthday.slice(0,4);
     var month =birthday.slice(5,7);
@@ -18,7 +17,7 @@ function akanName(){
     var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
     var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
     var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    if (d ===d)
+    if (d === d)
         if (document.getElementById('male').checked) {
             document.getElementById("output").innerHTML =( name + " your Akan name is " + maleName[d] + " and you were born on a " + weekday[d] + ".");
         }else if (document.getElementById('female').checked) {
